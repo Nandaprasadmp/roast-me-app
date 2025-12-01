@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roast Me App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 Roast Me App 🔥</h1>
+        <p>Enter your name and get roasted 😆</p>
+
+        <form method="POST">
+            <input type="text" name="username" placeholder="Enter your name" required>
+            <button type="submit">Roast Me 😭🔥</button>
+        </form>
+
+        {% if roast %}
+        <div class="roast-box">
+            <p>{{ roast }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
